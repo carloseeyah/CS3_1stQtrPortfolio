@@ -1,8 +1,16 @@
 // no script tag needed
-let presentAge = 14;
-let maxAge = 90;
-let numPerDay = 2;
-let totalRequired = (numPerDay * 365)*(maxAge-presentAge);
+let presentAge = window.prompt("Enter your current age.", "13");
+let maxAge = window.prompt("Enter your maximum age.", "100");
+let= numPerDay = window.prompt("How many of your snack do you eat per day?" , "2");
 
-document.write("You will need " + totalRequired + " Biscoff Biscuits to last you until the ripe old age of " + maxAge + ".");
-document.write
+let totalrequired = (numPerDay * 365) * (maxAge - presentAge);
+
+if (confirm(`Is ${presentAge} your current age, ${maxAge} your maximum age, and ${numPerDay} really the amount of snack you eat per day?`))
+{
+    console.log(`Then You will need ${totalrequired} Biscoff Biscuits to last you until the ripe old age of ${maxAge} .`)
+    document.write(`Then You will need ${totalrequired} Biscoff Biscuits to last you until the ripe old age of ${maxAge} .`)
+
+}
+else {
+    console.log("Run the code again")
+}
