@@ -12,5 +12,5 @@ if (confirm(`Is ${presentAge} your current age, ${maxAge} your maximum age, and 
 
 }
 else {
-    console.log("Run the code again")
+    alert("Run the code again");
 }
