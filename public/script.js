@@ -1,4 +1,4 @@
-// no script tag needed
+/*
 let presentAge = window.prompt("Enter your current age.", "13");
 let maxAge = window.prompt("Enter your maximum age.", "100");
 let= numPerDay = window.prompt("How many of your snack do you eat per day?" , "2");
@@ -14,3 +14,4 @@ if (confirm(`Is ${presentAge} your current age, ${maxAge} your maximum age, and 
 else {
     alert("Run the code again");
 }
+*/
