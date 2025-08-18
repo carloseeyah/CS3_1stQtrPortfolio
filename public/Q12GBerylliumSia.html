@@ -1,0 +1,38 @@
+<html>
+    <body>
+
+<h2>Q1 3rd Graded Exercise submitted by Carlo Sia of 9-Beryllium</h2>
+
+ <label for="mealPrice">Enter the meal price</label> 
+    <input type="mealPrice" id="fmealPrice" name="fmealPrice">
+
+    <br><br> <label for="tip">Enter tip amount</label>
+    <input type="tip" id="ftip" name="ftip">
+
+    <br><br> <label for="serviceCharge">Enter service charge percent</label>
+    <input type="serviceCharge" id="fserviceCharge" name="fserviceCharge"> <br><br>
+    
+    <input type="submit" value="Accept Input" onclick="totalMeal()">
+
+    <p> Total Meal: <span id="resultHere"> </span></p>
+
+    <script>
+        function totalMeal() {
+    let mealPrice = document.getElementById("fmealPrice").value;
+    let tip = document.getElementById("ftip").value;
+    let serviceCharge = document.getElementById("fserviceCharge").value;
+
+    let totalCost = ((tip * 1) + (mealPrice * 1) + (serviceCharge / 100 * mealPrice)).toFixed(2);
+
+    document.getElementById("resultHere").innerHTML = totalCost;
+    }
+    </script>
+
+    <footer>
+    <p>References</p>
+    <p>W3Schools.com. (n.d.). https://www.w3schools.com/jsref/jsref_tofixed.asp</p>
+    </footer>
+    
+</body>
+</html>
+
