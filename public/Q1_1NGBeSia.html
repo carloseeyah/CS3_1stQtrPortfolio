@@ -1,0 +1,38 @@
+<body>
+
+  <h1>Feed Me Snacks</h1>
+
+    <label for="presentAge">Enter your age</label> 
+    <input type="presentAge" id="fpresentAge" name="fpresentAge">
+
+    <br><br> <label for="maxAge">Enter your Max age</label>
+    <input type="maxAge" id="fmaxAge" name="fmaxAge">
+
+    <br><br> <label for="numPerDay">Enter number of snacks</label>
+    <input type="numPerDay" id="fnumPerDay" name="fnumPerDay"> <br><br>
+
+    <p> Result: <span id="resultHere"> </span></p>
+    
+<input type="submit" value="Submit" onclick="getData()">
+ </body>
+<script>
+function getData() {
+let presentAge = document.getElementById("fpresentAge").value;
+let maxAge = document.getElementById("fmaxAge").value;
+let= numPerDay = document.getElementById("fnumPerDay").value;
+
+let totalrequired = (numPerDay * 365) * (maxAge - presentAge);
+
+if (confirm(`Is ${presentAge} your current age, ${maxAge} your maximum age, and ${numPerDay} really the amount of snack you eat per day?`))
+{
+    console.log(`Then You will need ${totalrequired} Biscoff Biscuits to last you until the ripe old age of ${maxAge} .`)
+    document.getElementById("resultHere").innerHTML = `Then You will need ${totalrequired} Biscoff Biscuits to last you until the ripe old age of ${maxAge} .`;
+
+}
+else {
+    alert("Run the code again");
+  
+}
+}
+    
+</script>
